@@ -4,4 +4,19 @@
   <artifactId>JBrew</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>JBrew</name>
+  
+  <build>
+  	<plugins>
+  		<plugin>
+  			<artifactId>maven-jar-plugin</artifactId>
+  			<configuration>
+  				<archive>
+  					<manifest>
+  						<mainClass>net.cebarks.jbrew.JBrew</mainClass>
+  					</manifest>
+  				</archive>
+  			</configuration>
+  		</plugin>
+  	</plugins>
+  </build>
 </project>
