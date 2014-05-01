@@ -190,7 +190,7 @@ public class JBrew {
 		lblAvailableFormulae.setHorizontalAlignment(SwingConstants.CENTER);
 		lblAvailableFormulae.setBounds(404, 6, 182, 16);
 		managePanel.add(lblAvailableFormulae);
-		
+
 		JOptionPane.showMessageDialog(jBrewFrame, "Some of these buttons may freeze the program! Do NOT worry, this is normal.");
 	}
 
@@ -211,12 +211,12 @@ public class JBrew {
 	public void setAvailableFormulaeListModel(ListModel model_1) {
 		availableFormulaeList.setModel(model_1);
 	}
-	
+
 	public void reloadInstalledList() {
 		JBrewUtil.parseInstalledFormulae();
 		setInstalledFormulaeListModel(JBrewUtil.getInstalledFormulaeInListModel());
 	}
-	
+
 	public void reloadAvaibleList() {
 		JBrewUtil.parseAvailableFormulae();
 		setAvailableFormulaeListModel(JBrewUtil.getAvailableFormulaeInListModel());
