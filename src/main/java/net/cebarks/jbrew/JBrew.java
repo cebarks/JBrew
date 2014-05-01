@@ -32,7 +32,6 @@ public class JBrew {
 	private JList availableFormulaeList;
 
 	public static void main(String[] args) {
-
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (Exception e) {
@@ -73,6 +72,7 @@ public class JBrew {
 		jBrewFrame.setTitle("JBrew");
 		jBrewFrame.setSize(800, 425);
 		jBrewFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		jBrewFrame.setLocationRelativeTo(null);
 		jBrewFrame.getContentPane().setLayout(null);
 
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
